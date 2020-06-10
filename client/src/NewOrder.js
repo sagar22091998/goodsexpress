@@ -55,7 +55,7 @@ class NewOrder extends Component{
     else if(response.status===500)
     this.handleError("Internal Server Error")
     else if(response.status===200){
-      console.log("Ho Gaya")
+      this.props.history.push("/orders")
     }
   
   }

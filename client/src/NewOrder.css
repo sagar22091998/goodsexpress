@@ -1,0 +1,98 @@
+.NewOrder{
+  display: flex;
+  color: #fff;
+  background: url(Order1.jpg);
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  min-height: 95vh;
+  padding: 1rem;
+}
+
+.NewOrder input[type="submit"]{
+  display: inline-block;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.NewOrder input{
+  border: 1px dotted var(--secondary-color);
+}
+
+.NewOrder input,
+.NewOrder label{
+  padding: 0.2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+  max-width: 450px;
+  width: 400px;
+  margin: 0.15rem auto;
+}
+.NewOrder h1{
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.NewOrder-Error{
+  font-size: 1.3rem;
+  color: coral;
+}
+@media(max-width:1100px){
+  
+  .NewOrder h1{
+    margin-bottom: 4rem;
+  }
+}
+
+@media(max-width:750px){
+  
+
+  .NewOrder input,
+  .NewOrder label
+  { 
+    width: 150px;
+    font-size: 0.8rem;
+  }
+
+  .NewOrder h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .NewOrder input[type="submit"]{
+    font-size: 0.75rem;
+  }
+
+  .NewOrder-Error {
+    font-size: 1rem;
+  }
+
+}
+
+
+
+@media(min-width:2300px){
+
+ .NewOrder input[type="submit"]{
+  display: inline-block;
+  margin: 1rem auto;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.5rem;
+}
+
+.NewOrder input,
+.NewOrder label{
+  font-size: 2rem;
+  max-width: 500px;
+  margin: 0.5rem auto;
+}
+.NewOrder h1{
+  margin-bottom: 5rem;
+  font-size: 5rem;
+}
+
+}
